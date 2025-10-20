@@ -1,0 +1,30 @@
+.background-stuff {
+    position: absolute;
+    border: none;
+    width: 100%;
+}
+
+.grass {
+    bottom: 0;
+    opacity: 0.75;
+}
+
+.left-pt {
+    bottom: -50px;
+    left: -50%;
+}
+
+.right-pt {
+    bottom: -80px;
+    right: -50%;
+    opacity: 0.2;
+}
+
+
+
+
+/*
+<img class="background-stuff grass" src="images/pngtree-jungle-grass-and-palm-silhouette-border-png-image_14577662.png" alt="silhouette">
+            <img class="background-stuff left-pt" src="images/Palm_Tree_Silhouette_PNG_Transparent_Clipart.png" alt="left-palm-tree">
+            <img class="background-stuff right-pt" src="images/15d065929e68f5cb95ebac9264983590-tall-palm-tree-silhouette-palm.webp" alt="right-palm-tree">
+*/

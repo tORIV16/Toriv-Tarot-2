@@ -1,0 +1,53 @@
+.snoopy {
+    border: none;
+    width: 100%;
+    z-index: 1;
+}
+
+.snoopy-welcome {
+    background-image: url(/images/backboard.PNG);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index:1
+}
+
+.top-welcome {
+    padding: 50px;
+}
+
+.bottom-welcome {
+    padding: 50px;
+}
+
+.snoopy-says {
+    margin: 0;
+    font-family: Carima;
+}
+
+.top-line {
+    font-size: 40px;
+}
+
+.bottom-line {
+    font-size: 30px;
+}
+
+.large-text {
+    font-size: 35px;
+}
+
+.background-gold {
+    background-color: rgba(255, 217, 0, 0.363);
+    padding: 10px;
+}
+
+.fortune-one {
+    color: rgb(146, 124, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.new-selection {
+    margin-top: 100px;
+}

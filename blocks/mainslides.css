@@ -1,0 +1,13 @@
+.main-slides {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.card-descriptions {
+    max-width: 350px;
+    margin: 0 auto 0;
+    color: white;
+}

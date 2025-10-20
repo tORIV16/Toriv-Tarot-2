@@ -1,0 +1,16 @@
+.fortune-one {
+    color: rgb(146, 124, 0);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px black;
+}
+
+.spiritual-fortune {
+    font-family: Akronim;
+}
+
+.background-god {
+    background-color: rgba(255, 244, 183, 0.664);
+    padding: 10px;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0) inset;
+    border-radius: 50%;
+}

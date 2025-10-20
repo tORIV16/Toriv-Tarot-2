@@ -1,0 +1,12 @@
+.five-card-spread {
+    flex-wrap: nowrap;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.tarot-card-five {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}

@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    top: -11px;
+    background-color: rgba(255, 232, 80, 0.9);
+    border-radius: 10px 10px 50px 50px;
+    border: outset 10px blue;
+    padding: 0 10px 0;
+    z-index: 3;
+}
+
+.header_title {
+    font-family: 'Monotype Corsiva';
+    font-size: 60px;
+    color: #ff0000;
+    text-shadow: 5px 5px 5px #00000071 ;
+    text-align: center;
+}

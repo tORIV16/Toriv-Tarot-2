@@ -1,0 +1,15 @@
+.your-card {
+    margin-top: 200px;
+    width: 750px;
+    text-align: center;
+    background-color: rgba(255, 232, 80, 0.9);
+    border-radius: 375px 375px 20px 20px;
+    border: outset 10px blue;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
