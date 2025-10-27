@@ -2732,7 +2732,7 @@ const fortuneCookie = [
 document.getElementById("pull-card-btn").addEventListener("click", pullCard);
 document.getElementById("pull-3-cards-btn").addEventListener("click", pullThreeCards)
 document.getElementById("pull-5-cards-btn").addEventListener("click", pullFiveCards)
-const cardContent = document.getElementById("main-slides");
+const cardContent = document.getElementById("content");
 
 
 
@@ -2746,13 +2746,39 @@ generateCardHTML = (selectedCard) => {
             alt="${selectedCard.name}"
             style="${isReversed}"
          >
-         <div class="card-descriptions background-god">
+         <div class="card-descriptions">
             <h3 class="card-name">${selectedCard.name}</h3>
             <hr>
             <h4 class="keywords">${selectedCard.keyword}</h4>
             <p class="card-meaning">${selectedCard.meaning}<p>
         </div>
-        <div class="snoopy-says large-text background-gold">  
+        <div class="snoopy-says background-gold">  
+            <p class="fortune-one">
+                I see... 
+            </p>
+            <p class="fortune-one">
+                This card comes to you when ${selectedCard.message}
+            </p>
+        </div>
+    `;
+}
+
+generateCardHTML = (selectedCard) => { 
+    const isReversed = selectedCard.side === "B" ? `transform: rotate(180deg);` : ``;
+    return `
+        <img
+            class="card-image"
+            src="${selectedCard.image}"
+            alt="${selectedCard.name}"
+            style="${isReversed}"
+         >
+         <div class="card-descriptions">
+            <h3 class="card-name">${selectedCard.name}</h3>
+            <hr>
+            <h4 class="keywords">${selectedCard.keyword}</h4>
+            <p class="card-meaning">${selectedCard.meaning}<p>
+        </div>
+        <div class="snoopy-says background-gold">  
             <p class="fortune-one">
                 I see... 
             </p>
@@ -2773,9 +2799,9 @@ function pullCard() {
 
     // ------ COUNTDOWN ------ //
     cardContent.innerHTML = `
-        <div class="single-card-msg">
-            <img class="snoopy" src="images/IMG_4198.GIF" alt="loading Pic">
-            <p class="loading">Shuffling...</p>
+        <div class="loading">
+            <img class="snoopy snoopy_2" src="images/IMG_4198.GIF" alt="loading Pic">
+            <p class="loading_msg bubble_loading">Shuffling...</p>
         </div>
     `
      // ------ COUNTDOWN ------ //
@@ -2792,7 +2818,7 @@ function pullCard() {
         cardContent.innerHTML = `
             <div class="one-card-spread">
             
-                <div class="snoopy-says large-text background-gold">  
+                <div class="snoopy-says background-gold">  
                     <p class="fortune-one">
                         The Universe Has Provided You with...
                     </p>

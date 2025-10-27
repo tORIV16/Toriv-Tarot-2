@@ -1,0 +1,28 @@
+.bubble {
+    background: rgb(110, 151, 108);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    margin: 0 5%;
+    border-bottom: 10px solid rgb(72, 109, 70);
+}
+
+.bubble_loading {
+    background: rgb(233, 236, 255);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 5% 5%;
+    border-bottom: 10px solid rgb(167, 172, 203);
+}
+
+.bubble_1 {
+    margin-top: -10%;
+}
+
+@media screen and (max-width: 630px) {
+    .bubble {
+        
+    }
+}

@@ -4,14 +4,42 @@
     background-color: rgba(255, 232, 80, 0.9);
     border-radius: 10px 10px 50px 50px;
     border: outset 10px blue;
-    padding: 0 10px 0;
-    z-index: 3;
+    z-index: 4;
+    max-width: 500px;
 }
 
 .header_title {
     font-family: 'Monotype Corsiva';
     font-size: 60px;
     color: #ff0000;
-    text-shadow: 5px 5px 5px #00000071 ;
+    text-shadow: 5px 5px 5px #00000071;
     text-align: center;
+    margin: 10px 20px;
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 630px) {
+
+    .header {
+        border-width: 8px;
+    }
+
+    .header_title {
+        font-size: 40px;
+        text-shadow: 3px 3px 3px #00000071;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .header {
+        border-width: 6px;
+    }
+
+    .header_title {
+        font-size: 30px;
+        text-shadow: 2.5px 2.5px 2.5px #00000071;
+        margin: 10px;
+    }
 }

@@ -1,53 +1,78 @@
 .snoopy {
     border: none;
-    width: 100%;
-    z-index: 1;
+    width: 60%;
+    z-index: 2
 }
 
-.snoopy-welcome {
-    background-image: url(/images/backboard.PNG);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index:1
+.snoopy_1 {
+    margin: -10% auto 0;
 }
 
-.top-welcome {
-    padding: 50px;
+.snoopy_2 {
+    margin: 30% auto 0;
+
 }
 
-.bottom-welcome {
-    padding: 50px;
+.snoopy_name {
+    font-size: 45px;
+    margin: 8% 0 0;
 }
 
 .snoopy-says {
-    margin: 0;
+    text-align: center;
+    margin: 0 10%;
     font-family: Carima;
+    text-wrap: wrap;
 }
 
 .top-line {
-    font-size: 40px;
+    font-size: 30px;
+    margin-top: -10%
 }
 
 .bottom-line {
-    font-size: 30px;
-}
-
-.large-text {
-    font-size: 35px;
+    font-size: 20px;
 }
 
 .background-gold {
-    background-color: rgba(255, 217, 0, 0.363);
+    background-color: rgba(155, 145, 93, 0.55);
     padding: 10px;
-}
-
-.fortune-one {
-    color: rgb(146, 124, 0);
-    -webkit-background-clip: text;
-    -webkit-text-stroke: 0.5px black;
+    max-width: 410px;
+    width: 80%
 }
 
 .new-selection {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 630px) {
+    .snoopy-says {
+        font-size: 30px;
+    }
+
+    .snoopy_name {
+        font-size: 30px
+    }
+
+    .top-line {
+        font-size: 16px;
+    }
+
+    .bottom-line {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .snoopy-says {
+        font-size: 24px;
+    }
+
+    .top-line {
+        font-size: 10px;
+    }
+
+    .bottom-line {
+        font-size: 5px;
+    }
 }
