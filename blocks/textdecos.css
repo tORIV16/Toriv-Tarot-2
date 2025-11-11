@@ -5,20 +5,16 @@
 .rainbow-text {
     color: white;
     text-shadow:
-        3px 3px violet,
-        2px 2px indigo,
-        1px 1px blue,
-        -1px -1px green,
-        -2px -2px orange,
-        -3px -3px red;
+        3px 3px rgb(189, 90, 255),
+        2px 2px rgb(224, 239, 24),
+        1px 1px rgb(255, 115, 0),
+        -1px -1px rgb(255, 41, 41),
+        -2px -2px rgb(17, 0, 255),
+        -3px -3px rgb(86, 0, 157);
 }
 
 .underline {
     text-decoration: underline;
-}
-
-.headline {
-    font-size: 40px;
 }
 
 .nogap {
@@ -30,6 +26,16 @@
 }
 .break {
     margin: 1% auto ;
-    width: 80%;
-    border: dotted rgb(255, 138, 138)
+    width: 50%;
+    border: dotted rgb(226, 203, 255)
+}
+
+@media screen and (max-width: 630px) {
+    .break {
+        margin: 3% auto;
+    }
+
+    .headline {
+        font-size: 30px;
+    } 
 }

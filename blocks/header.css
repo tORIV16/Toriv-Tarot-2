@@ -1,11 +1,16 @@
 .header {
+    box-sizing: border-box;
     position: fixed;
     top: -11px;
     background-color: rgba(255, 232, 80, 0.9);
     border-radius: 10px 10px 50px 50px;
     border: outset 10px blue;
     z-index: 4;
-    max-width: 500px;
+    margin: 0 auto;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    max-width: 630px;
 }
 
 .header_title {
@@ -14,7 +19,7 @@
     color: #ff0000;
     text-shadow: 5px 5px 5px #00000071;
     text-align: center;
-    margin: 10px 20px;
+    margin: 1% auto;
     text-wrap: nowrap;
 }
 
@@ -38,7 +43,7 @@
     }
 
     .header_title {
-        font-size: 30px;
+        font-size: 20px;
         text-shadow: 2.5px 2.5px 2.5px #00000071;
         margin: 10px;
     }

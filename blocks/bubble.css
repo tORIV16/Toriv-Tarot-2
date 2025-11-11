@@ -18,11 +18,14 @@
 }
 
 .bubble_1 {
-    margin-top: -10%;
+    margin-top: -9%;
+    text-shadow: 
+        -1px -1px rgb(158, 37, 214),
+        3px 3px black;
 }
 
 @media screen and (max-width: 630px) {
-    .bubble {
-        
+    .bubble_1 {
+        margin-top: -10%
     }
 }

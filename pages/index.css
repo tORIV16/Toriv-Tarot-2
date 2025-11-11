@@ -3,8 +3,9 @@
 @import url(../blocks/background.css);
 @import url(../blocks/bubble.css);
 @import url(../blocks/buttons.css);
-@import url(../blocks/card.css);
 @import url(../blocks/choices.css);
+@import url(../blocks/content.css);
+@import url(../blocks/divider.css);
 @import url(../blocks/FiveCardSpread.css);
 @import url(../blocks/fortune.css);
 @import url(../blocks/header.css);

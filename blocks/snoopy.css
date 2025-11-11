@@ -1,29 +1,38 @@
 .snoopy {
     border: none;
-    width: 60%;
     z-index: 2
 }
 
 .snoopy_1 {
     margin: -10% auto 0;
+    width: 60%;
 }
 
 .snoopy_2 {
-    margin: 30% auto 0;
-
+    width: 75%;
+    box-sizing: border-box;
+    border: 10px solid rgb(128, 98, 0);
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 .snoopy_name {
     font-size: 45px;
-    margin: 8% 0 0;
+    margin: 5% 0 0;
 }
 
 .snoopy-says {
     text-align: center;
-    margin: 0 10%;
+    margin: 0 auto;
     font-family: Carima;
     text-wrap: wrap;
+    font-size: 35px;
 }
+
+.shop-name {
+    font-size: 60px;
+}
+
 
 .top-line {
     font-size: 30px;
@@ -41,28 +50,17 @@
     width: 80%
 }
 
-.new-selection {
-    margin-top: 100px;
-}
-
 @media screen and (max-width: 630px) {
     .snoopy-says {
         font-size: 25px;
     }
 
-    .snoopy_name {
-        font-size: 30px
-    }
-
-    .top-line {
-        font-size: 16px;
-    }
-
-    .bottom-line {
-        font-size: 12px;
+    .shop-name {
+        font-size: 50px;
+        margin: 0 5%;
     }
 }
-
+/*
 @media screen and (max-width: 430px) {
     .snoopy-says {
         font-size: 24px;
@@ -76,3 +74,4 @@
         font-size: 5px;
     }
 }
+    */

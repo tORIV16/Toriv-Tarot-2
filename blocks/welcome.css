@@ -1,8 +1,13 @@
 .welcome {
-    max-width: 500px;
     width: 100%;
-    margin: 25% auto 10%;
+    margin: 25% auto 1%;
     display: flex;
     flex-direction: column;
     justify-content: center
+}
+
+@media screen and (max-width: 630px) {
+    .welcome {
+        margin: 12% auto 0;
+    }
 }
