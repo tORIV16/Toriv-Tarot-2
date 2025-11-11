@@ -1,5 +1,6 @@
 .loading {
     width: 100%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +12,7 @@
 }
 
 .loading_msg {
+    box-sizing: border-box;
     text-align: center
 }
 
