@@ -1,4 +1,4 @@
-@import url(../blocks/header.css);
+
 @import url(../blocks/choices.css);
 @import url(../blocks/FiveCardSpread.css);
 @import url(../blocks/OneCardSpread.css);
@@ -8,5 +8,7 @@
 @import url(../blocks/page.css);
 @import url(../blocks/loading.css);
 @import url(../blocks/fortuneteller.css);
+@import url(../blocks/header.css);
 @import url(../blocks/space.css);
 @import url(../blocks/snoopywelcome.css);
+@import url(../vendor/fonts.css);
