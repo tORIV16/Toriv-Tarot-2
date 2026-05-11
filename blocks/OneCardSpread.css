@@ -1,31 +1,124 @@
 .one-card-spread {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 10% auto;
+    margin: 0 auto;
 }
 
-.card-image {
-    max-width: 250px;
-    width: 40%;
-    margin: 20px auto;
-    border: solid 5px rgba(255, 255, 255, 0.75);
-}
-
-.card-descriptions {
-    max-width: 250px;
-    margin: -17.5% auto 10%;
-    color: rgb(34, 34, 0);
-    background-color: rgba(255, 255, 255, 0.856);
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0) inset;
+.one-card-spread__title-background {
+    width: 500px;
+    margin: 60px auto 0;
+    border: 1px solid white;
+    box-shadow: 0 0 15px white,
+            inset 0 0 15px white;
     border-radius: 50%;
-    padding: 10%;
-    font-size: 15px
+    background-color: rgba(250, 250, 250, 0.2);
+
 }
 
-@media screen and (max-width: 630px) {
-    .card-descriptions {
-        font-size: 10px;
-    }
+.one-card-spread__title {
+    color: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0.5px black;
+    text-shadow: 0 0 5px white;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 25px;
+
+}
+
+.one-card-spread__tarot-card {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.one-card-spread__tarot-card-image {
+    box-sizing: border-box;
+    max-width: 120px;
+    width: 100%;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    border: solid 2px rgba(255, 250, 214, 0.872);
+    box-shadow: 0 0 15px rgb(255, 226, 58);
+}
+
+.one-card-spread__tarot-card-descriptions {
+    color: rgb(34, 34, 0);
+    background-image: radial-gradient(circle, white 0%, transparent 100%);
+    box-shadow: inset 0 0 10px rgb(255, 255, 255),
+                    0 0 10px rgb(255, 255, 255);
+    border-radius: 50%;
+    max-width: 700px;
+    box-sizing: border-box;
+    width: 600px;
+    padding: 30px;
+    margin: -30px auto 0;
+    text-wrap: wrap;
+    font-size: 15px;
+    font-family: Carima;
+    text-shadow: 0 0 2px white;
+}
+
+.one-card-spread__tarot-card-name {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.one-card-spread__tarot-card-keywords {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.one-card-spread__tarot-card-meaning {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.one-card-spread__new-selection {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    font-family: BadUnicorn;
+    text-shadow: 0 0 2px white;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.one-card-spread__new-selection-snoopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.one-card-spread__new-selection-snoopy-img {
+    border: 5px outset rgb(130, 78, 0);
+    background-color: rgb(110, 149, 108);
+    box-shadow: inset 0 0 10px rgb(51, 82, 49),
+                    0 0 10px rgb(0, 0, 0);  
+}
+
+.one-card-spread__new-selection-snoopy-msg-one {
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: -35px auto 0;
+    padding: 10px;
+    background-color: rgba(13, 8, 1, 0.637);
+    box-shadow: inset 0 0 5px yellow,
+                    0 0 5px yellow;
+}
+
+.one-card-spread__new-selection-snoopy-msg-two {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 275px;
+    margin: 0 auto;
+    background-color: rgba(13, 8, 1, 0.637);
+    box-shadow: inset 0 0 5px yellow,
+                    0 0 5px yellow;
 }

@@ -1,0 +1,28 @@
+.snoopy-welcome-deco {
+
+}
+
+.snoopy-welcome-deco-left {
+
+}
+
+.snoopy-welcome-deco-middle {
+
+}
+
+.snoopy-welcome-deco-right {
+
+}
+
+.snoopy-welcome-fortune-table {
+    height: 175px;
+    width: 50%;
+    border-radius: 50%;
+    border-bottom: 10px solid rgb(73, 104, 71);
+    background-color: rgb(110, 149, 108);
+    margin: -35px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+}

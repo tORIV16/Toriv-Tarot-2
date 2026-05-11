@@ -2729,12 +2729,10 @@ const fortuneCookie = [
     }
 ]
 
-document.getElementById("pull-card-btn").addEventListener("click", pullCard);
+document.getElementById("pull-card-btn").addEventListener("click", pullCard)
 document.getElementById("pull-3-cards-btn").addEventListener("click", pullThreeCards)
 document.getElementById("pull-5-cards-btn").addEventListener("click", pullFiveCards)
 const cardContent = document.getElementById("content");
-
-
 
 
 generateCardHTML = (selectedCard) => { 
@@ -2767,24 +2765,16 @@ generateCardHTML = (selectedCard) => {
     const isReversed = selectedCard.side === "B" ? `transform: rotate(180deg);` : ``;
     return `
         <img
-            class="card-image"
+            class="one-card-spread__tarot-card-image"
             src="${selectedCard.image}"
             alt="${selectedCard.name}"
             style="${isReversed}"
-         >
-         <div class="card-descriptions">
-            <h3 class="card-name">${selectedCard.name}</h3>
+        >
+        <div class="one-card-spread__tarot-card-descriptions">
+            <h3 class="one-card-spread__tarot-card-name">${selectedCard.name}</h3>
             <hr>
-            <h4 class="keywords">${selectedCard.keyword}</h4>
-            <p class="card-meaning">${selectedCard.meaning}<p>
-        </div>
-        <div class="snoopy-says background-gold">  
-            <p class="fortune-one">
-                I see... 
-            </p>
-            <p class="fortune-one">
-                This card comes to you when ${selectedCard.message}
-            </p>
+            <p class="one-card-spread__tarot-card-keywords">✨${selectedCard.keyword}✨</p>
+            <p class="one-card-spread__tarot-card-meaning">${selectedCard.meaning}<p>
         </div>
     `;
 }
@@ -2798,10 +2788,20 @@ function pullCard() {
 
 
     // ------ COUNTDOWN ------ //
+    window.scrollTo({
+        top: 250,
+        behavior: "smooth"
+    });
     cardContent.innerHTML = `
-        <div class="loading">
-            <img class="snoopy snoopy_2" src="images/IMG_4198.GIF" alt="loading Pic">
+        <div class="shuffling">
+
+            <div class="loading">
+                <div class="loading__breath-background"></div>
+                <img class="loading__snoopy" src="images/IMG_4198.GIF" alt="loading Pic">
+                        
+            </div>
             <p class="loading_msg bubble_loading">Shuffling...</p>
+
         </div>
     `
      // ------ COUNTDOWN ------ //
@@ -2815,45 +2815,63 @@ function pullCard() {
             const selectedCard = tarotCards[randomIndexCards];
             const fortune = fortuneCookie[randomIndexFortune];
 
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
         cardContent.innerHTML = `
             <div class="one-card-spread">
-            
-                <div class="snoopy-says background-gold">  
-                    <p class="fortune-one">
-                        The Universe Has Provided You with...
+                <div class=" one-card-spread__title-background">  
+                    <p class="one-card-spread__title snoopy-says">
+                        The Universe Has Provided<br>You with...
                     </p>
                 </div>
 
-                <div class="tarot-card">
+                <div class="one-card-spread__tarot-card">
                     ${generateCardHTML(selectedCard)}
                 </div>
-                <div class="snoopy-says large-text">
-                    <p class="background-gold">
-                        The Universe is also edging me to tell you,
+                <div class="speech-bubble__one-card-spread">
+                    <p class="speech-bubble__one-card-spread-name" aria-hidden="true">
+                        Snoopy
                     </p>
-                    <p class="spiritual-fortune background-god">
+                    <p class="speech-bubble__one-card-spread-message">
+                        I see... 
+                        <br>
+                        This card comes to you when ${selectedCard.message}
+                        <br>
+                        The Universe is also urging me to tell you,
+                        <br>
+                        <span class="">
                         <b>"${fortune.fortune}"</b>
-                    </p>
-                    <p class="background-gold">
+                        </span>
+                        <br>
                         ${fortune.remark}
                     </p>
                 </div>
-                <div class="new-selection">
-                
-                    <img class="snoopy medium" src="images/snoopy.gif">
-                    <span class="snoopy-welcome">
-                        <h2 class="snoopy-says top-line">
-                            Interesting...
-                        </h2>
-
-                        <h2 class="snoopy-says bottom-line">
-                            Anyway, Make another Choice?
-                        </h2>
-                    </span>
-                    
+                <div class="one-card-spread__new-selection">
+                    <div class="one-card-spread__new-selection-snoopy">
+                        <img class="one-card-spread__new-selection-snoopy-img" src="images/snoopy.gif" alt="Snoopy is waiting patiently for your next question.">
+                        <p class="one-card-spread__new-selection-snoopy-msg-one">
+                                Interesting...<br>
+                                Really think that one through...
+                        </p>
+                    </div>
+                    <div class="one-card-spread__new-selection-buttons">
+                        <p class="one-card-spread__new-selection-snoopy-msg-two">
+                                Anyway, Make another Choice?<br>
+                                🔻
+                        </p>
+                        <ul class="choices__one-card-spread">
+                            <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--saphire choices__disabled" id="pull-3-cards-btn" disabled>Pull <hr class="underline">3</hr> Cards</button></li>
+                            <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--emerald" id="pull-card-btn">Pull <hr class="underline">1</hr> Card</button></li>
+                            <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--ruby choices__disabled" id="pull-5-cards-btn" disabled>Pull <hr class="underline">5</hr> Cards</button></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         `;
+        document.getElementById("pull-card-btn").addEventListener("click", pullCard)
     }, 5000);
      // ------ ------------- ------ //
 

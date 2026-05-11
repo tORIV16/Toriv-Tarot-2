@@ -1,0 +1,9 @@
+.space {
+    position: sticky;
+    background-image: url(../images/space-backdrop.png);
+    background-attachment: fixed;
+    height: 400px;
+    background-size: cover;
+    mask-image: linear-gradient(to top, transparent 0%, #4a6752 100%);
+    z-index: 1;
+}

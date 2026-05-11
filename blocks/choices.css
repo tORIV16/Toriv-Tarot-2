@@ -1,89 +1,92 @@
 .choices {
+    margin: 0 auto 120px;
+    width: 650px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choices__one-card-spread {
+    width: 400px;
     margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choices__list {
+    list-style: none;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2.5%;
-    z-index: 2;
 }
 
-.button {
-    font-size: 1.2rem;
-    width: 40%;
-    padding: 5% 11%;
-    border-radius: 25%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    
+.choices__button {
+    width: 140px;
+    height: 220px;
+    border-radius: 10px;
+    border: 2px solid #fff;
 }
 
-.emerald {
+.choices__button-one-card-spread {
+    width: 110px;
+    height: 180px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    margin: -25px auto 0;
+}
+
+.choices__disabled {
+    opacity: 75%;
+}
+
+.choices__button--emerald {
     background-image: linear-gradient(-45deg, rgb(22, 213, 22), rgb(179, 255, 179), rgb(22, 213, 22));
-    border: 10px outset green;
+    border-color: green;
+    box-shadow: 0 0 4px green;
 } 
 
-.emerald:hover {
+.choices__button--emerald:hover {
     background-image: linear-gradient(-45deg, #94ef7f, #dbffd3, #94ef7f);
     background-color: #94ef7f;
-    border: 10px outset rgb(29, 187, 29);
+    border-color: rgb(29, 187, 29);
+    box-shadow: 0 0 15px rgb(191, 255, 186);
 }
 
-.emerald:hover {
-    background-image: linear-gradient(-45deg, #94ef7f, #dbffd3, #94ef7f);
-    background-color: #94ef7f;
-    border: 10px outset rgb(29, 187, 29);
+.choices__button--emerald:active {
+    background-image: linear-gradient(-45deg, #b3ef7f, #dbffd3, #c2ef7f);
+    background-color: #c6ef7f;
+    border-color: rgb(97, 187, 29);
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.74);
 }
 
-.saphire {
+.choices__button--saphire {
     background-color: rgb(90, 90, 234);
-    border: 10px outset blue;
+    border-color: blue;
 } 
 
-.saphire:hover {
+.choices__button--saphire:hover {
     background-color: rgb(149, 149, 249);
-    border: 10px outset rgb(66, 66, 255);
+    border-color: rgb(66, 66, 255);
 }
 
-.ruby {
+.choices__button--ruby {
     background-color: rgb(255, 111, 111);
-    border: 10px outset red;
+    border-color: red;
 } 
 
-.ruby:hover {
+.choices__button--ruby:hover {
     background-color: rgb(255, 163, 163);
-    border: 10px outset rgb(184, 0, 0);
-}
-
-
-
-
-
-@media screen and (max-width: 630px) {
-    .button {
-        font-size: 0.65rem;
-    }
-
-    .emerald {
-        border: 5px outset green;
-    } 
-
-    .emerald:hover {
-        border: 5px outset rgb(29, 187, 29);
-    }
-
-    .saphire {
-        border: 5px outset blue;
-    } 
-
-    .saphire:hover {
-        border: 5px outset rgb(66, 66, 255);
-    }
-
-    .ruby {
-        border: 5px outset red;
-    } 
-
-    .ruby:hover {
-        border: 5px outset rgb(184, 0, 0);
-    }
+    border-color: rgb(184, 0, 0);
 }

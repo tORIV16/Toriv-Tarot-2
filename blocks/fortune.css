@@ -1,31 +1,16 @@
-.fortune-one {
-    color: rgb(255, 255, 255);
-    /*-webkit-background-clip: text;
-    -webkit-text-stroke: 0.5px black;*/
-    width: 80%;
+.fortune {
+    max-width: 840px;
+    width: 100%;
+    height: 1200px;
     margin: 0 auto;
-    text-align: center;
-    text-wrap: wrap;
-    font-size: 25px;
-}
-
-.spiritual-fortune {
-    font-family: Akronim;
-}
-
-.background-god {
-    width: 80%;
-    padding: 0 10%;
-}
-
-@media screen and (max-width: 630px) {
-    .fortune-one {
-        font-size: 15px;
-    }
-}
- 
-@media screen and (max-width: 430px) {
-    .fortune-one {
-        font-size: 15px;
-    }
+    background-color: rgb(230, 150, 0,);
+    border-radius: 420px 420px 20px 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgb(90, 19, 141);
+    background-image: url(../images/cropped_precise_image.png);
+    background-size: cover;
+    background-position-y: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

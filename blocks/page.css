@@ -1,5 +1,18 @@
+html {
+    scrollbar-width: none;
+}
+
 .page {
     background-color: #4a6752;
     margin: 0 auto;
+}
+
+h2, h3, h4, p {
+    margin: 0px;
+}
+
+button {
+    font-family: BadUnicorn;
+    font-size: 30px;
 }
 

@@ -7,11 +7,169 @@
         <link rel="stylesheet" href="./pages/index.css">
     </head>
     <body class="page">
+
         <header class="header">
-            <h1 class="header_title">Toriv's Fortune Shop</h1>
+
+            <div class="header__container">
+
+                <h1 class="header__container-title">✨Toriv's Magical World✨</h1>
+
+                <hr class="break"></hr>
+
+            </div>
+
         </header> 
 
+        <div class="space"></div>
+
         <main class="main">
+
+            <section class="fortune" id="content">
+
+               <!--  <SHUFFLING EFFECT>
+                
+               <div class="shuffling">
+
+                    <div class="loading">
+                        <div class="loading__breath-background"></div>
+                        <img class="loading__snoopy" src="images/IMG_4198.GIF" alt="loading Pic">
+                        
+                    </div>
+                    <p class="loading_msg bubble_loading">Shuffling...</p>
+
+                </div>
+                
+                --> 
+                
+
+                <!-- <WELCOME PAGE -->
+                
+                <div class="fortune-teller">
+
+                    <div class="fortune-teller__welcome-card">
+
+                        <div class="fortune-teller__welcome-card-title">
+
+                            <h2 class="fortune-teller__welcome-card-welcome-to">
+                            Welcome to
+                            </h2>
+                            <h2 class="fortune-teller__welcome-card-name">
+                                Snoopy's<br>Fortune Shop
+                            </h2>
+
+                        </div>
+                        
+                        <div class="snoopy-welcome-deco">
+                            <img src="./images/the-fool-rotate-tarot-rotate.gif" class="snoopy-welcome-deco-left">
+                            <img src="./images/snoopy.gif" class="snoopy-welcome-deco-middle">
+                            <img src="./images/the-fool-rotate-tarot-rotate.gif" class="snoopy-welcome-deco-right">
+                        </div>
+
+                        <div class="snoopy-welcome-fortune-table">
+                            <p>🔮<br>.</p>
+                        </div>
+                        <div class="speech-bubble">
+                            <h2 class="speech-bubble__name" aria-hidden="true">
+                                Snoopy
+                            </h2>
+                            <p class="speech-bubble__message">
+                                Hey, welcome to my shop. Looking for answers? Choose an option below and let me answer for you.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <ul class="choices">
+                    <li class="choices__list"><button type="button" class="choices__button choices__button--saphire choices__disabled" id="pull-3-cards-btn" disabled>Pull <hr class="underline">3</hr> Cards</button></li>
+                    <li class="choices__list"><button type="button" class="choices__button choices__button--emerald" id="pull-card-btn">Pull <hr class="underline">1</hr> Card</button></li>
+                    <li class="choices__list"><button type="button" class="choices__button choices__button--ruby choices__disabled" id="pull-5-cards-btn" disabled>Pull <hr class="underline">5</hr> Cards</button></li>
+                </ul>
+                
+                
+                <!--
+                <div class="one-card-spread">
+            
+                    <div class=" one-card-spread__title-background">  
+                        <p class="one-card-spread__title snoopy-says">
+                            The Universe Has Provided<br>You with...
+                        </p>
+                    </div>
+
+                    <div class="one-card-spread__tarot-card">
+                        <--${generateCardHTML(selectedCard)}">--
+                        <img
+                            class="one-card-spread__tarot-card-image"
+                            src="images/00-TheFool.jpg"
+                            alt="0 - The Fool"
+                            style=""
+                        >
+                        <div class="one-card-spread__tarot-card-descriptions">
+                            <h3 class="one-card-spread__tarot-card-name">0 - The Fool</h3>
+                            <hr>
+                            <p class="one-card-spread__tarot-card-keywords">✨Beginnings, Freedom, Innocence✨</p>
+                            <p class="one-card-spread__tarot-card-meaning">One who is enthusiastic but inattentive to details. Immature and Carefree, yet Pure of Heart.<p>
+                        </div>
+                        <div class="speech-bubble__one-card-spread">
+                            <p class="speech-bubble__one-card-spread-name" aria-hidden="true">
+                                Snoopy
+                            </p>
+                            <p class="speech-bubble__one-card-spread-message">
+                                I see... 
+                                <br>
+                                This card comes to you when you're standing on the edge of something new, urging you to trust your intuition and step forward without fear of the unknown.
+                                <br>
+                                The Universe is also urging me to tell you,
+                                <br>
+                                <span class="">
+                                    <b>"Follow the advice of experts"</b>
+                                </span>
+                                <br>
+                                Hey, listen! This fortune says to trust the experts. They probably know what's up.
+                            </p>
+                        </div>
+                        
+                        <--${generateCardHTML(selectedCard)}">--
+
+                        
+                    </div>
+
+                    <div class="one-card-spread__new-selection">
+                        <div class="one-card-spread__new-selection-snoopy">
+                            <img class="one-card-spread__new-selection-snoopy-img" src="images/snoopy.gif" alt="Snoopy is waiting patiently for your next question.">
+                            <p class="one-card-spread__new-selection-snoopy-msg-one">
+                                    Interesting...<br>
+                                    Really think that one through...
+                            </p>
+                        </div>
+                        <div class="one-card-spread__new-selection-buttons">
+                            <p class="one-card-spread__new-selection-snoopy-msg-two">
+                                    Anyway, Make another Choice?<br>
+                                    🔻
+                            </p>
+                            <ul class="choices__one-card-spread">
+                                <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--saphire choices__disabled" id="pull-3-cards-btn" disabled>Pull <hr class="underline">3</hr> Cards</button></li>
+                                <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--emerald" id="pull-card-btn">Pull <hr class="underline">1</hr> Card</button></li>
+                                <li class="choices__list"><button type="button" class="choices__button-one-card-spread choices__button--ruby choices__disabled" id="pull-5-cards-btn" disabled>Pull <hr class="underline">5</hr> Cards</button></li>
+                            </ul>
+                        </div>
+                        
+                        
+                    </div>
+                </div>-->
+
+            </section>
+
+            <section>
+
+
+            </section>
+
+
+
+<!--
+
+
             <section class="your-card">
                 <img class="backdrop" src="images/cropped_precise_image.png">
                 <div class="content" id="content">
@@ -30,10 +188,10 @@
                         <img src="./images/snoopy.gif" alt="Snoopy Is Minding His Own Business, but Go Ahead and Ask" class="snoopy snoopy_1">
                         <div class="bubble carima bubble_1">
                             <h2 class="snoopy_name">
-                                🔮I'm <span class="underline">Snoopy</span>,🎃
+                                🔮I'm <hr class="underline">Snoopy</hr>,🎃
                             </h2>
                             <h2 class="top-line nogap">
-                                Your <span class="underline">Tarot Reader</span> for this Evening.
+                                Your <hr class="underline">Tarot Reader</hr> for this Evening.
                             </h2>
                             <h2 class="bottom-line underline nogap">
                                 Make a Choice, Please!
@@ -46,13 +204,13 @@
                     </div> 
                 </div>
                 <div class="choices">
-                    <button class="emerald button" id="pull-card-btn">Pull <span class="underline">1</span> Card</button>
-                    <button class="saphire button" id="pull-3-cards-btn" disabled>Pull <span class="underline">3</span> Cards</button>
-                    <button class="ruby button" id="pull-5-cards-btn" disabled>Pull <span class="underline">5</span> Cards</button>
+                    <button class="emerald button" id="pull-card-btn">Pull <hr class="underline">1</hr> Card</button>
+                    <button class="saphire button" id="pull-3-cards-btn" disabled>Pull <hr class="underline">3</hr> Cards</button>
+                    <button class="ruby button" id="pull-5-cards-btn" disabled>Pull <hr class="underline">5</hr> Cards</button>
                 </div>
                 <div class="divider"></div>
                 <div class="divider"></div>
-            </section>
+            </section>-->
         </main>
         <script src="script.js"></script>
     </body>
