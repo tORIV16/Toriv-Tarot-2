@@ -7,10 +7,21 @@
     border-radius: 420px 420px 20px 20px;
     border: 1px solid black;
     box-shadow: 0 0 10px rgb(90, 19, 141);
+    background-color:rgba(99, 20, 173, 0.521);
     background-image: url(../images/cropped_precise_image.png);
     background-size: cover;
     background-position-y: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) {
+    .fortune {
+        max-width: 420px;
+        height: 730px;
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position-y: top;
+    }
 }

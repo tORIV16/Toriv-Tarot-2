@@ -26,3 +26,34 @@
     align-items: center;
     font-size: 75px;
 }
+
+@media screen and (max-width: 900px) {
+    .snoopy-welcome-deco {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: -25px auto 0;
+        
+
+    }
+
+    .snoopy-welcome-deco-left {
+        width: 100px;
+        margin: 0 auto
+    }
+
+    .snoopy-welcome-deco-middle {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .snoopy-welcome-deco-right {
+        display: none;
+    }
+
+    .snoopy-welcome-fortune-table {
+        width: 80%;
+        height: 130px;
+        margin-top: -30px
+    }
+}

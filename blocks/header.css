@@ -8,7 +8,7 @@
 }
 
 .header__container {
-    width: 100%;
+    width: 80%;
     max-width: 800px;
     height: 90px;
     margin: 0 auto;
@@ -40,28 +40,18 @@
     text-wrap: nowrap;
 }
 
-@media screen and (max-width: 630px) {
-
-    .header {
-        border-width: 8px;
+@media screen and (max-width: 900px) {
+    .header__container {
+        height: 65px;
+        margin: 0 auto;
+        background-color: rgba(40, 66, 161, 0.9);
+        border-radius: 10px 10px 150px 150px;
+        border: solid 1px rgb(81, 0, 128);
+        box-shadow: 0 0 10px rgb(86, 0, 157);
     }
 
-    .header_title {
-        font-size: 40px;
-        text-shadow: 3px 3px 3px #00000071;
-        margin: 15px;
-    }
-}
-
-@media screen and (max-width: 430px) {
-
-    .header {
-        border-width: 6px;
-    }
-
-    .header_title {
-        font-size: 20px;
-        text-shadow: 2.5px 2.5px 2.5px #00000071;
-        margin: 10px;
+    .header__container-title {
+        padding-top: 10px;
+        font-size: 25px;
     }
 }

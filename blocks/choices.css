@@ -1,4 +1,5 @@
 .choices {
+    z-index: 3;
     margin: 0 auto 120px;
     width: 650px;
     padding: 0;
@@ -43,7 +44,6 @@
     width: 110px;
     height: 180px;
     border-radius: 5px;
-    border: 2px solid #fff;
     margin: -25px auto 0;
 }
 
@@ -89,4 +89,35 @@
 .choices__button--ruby:hover {
     background-color: rgb(255, 163, 163);
     border-color: rgb(184, 0, 0);
+}
+
+@media screen and (max-width: 900px) {
+    .choices {
+        margin-bottom: 20px;
+        width: 400px;
+        gap: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .choices__button {
+        width: 110px;
+        height: 180px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px white;
+    }
+
+    .choices__one-card-spread {
+        width: 250px;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .choices__button-one-card-spread {
+        width: 80px;
+        height: 130px;
+        border-radius: 5px;
+        margin: -20px auto 0;
+    }
 }

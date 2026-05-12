@@ -30,3 +30,24 @@
     background-image: radial-gradient(circle, rgba(250, 250, 250, 0.7) 0%, transparent 75%);
     overflow:visible;
 }
+
+@media screen and (max-width: 900px) {
+    .fortune-teller {
+        margin-top: 20px;
+    }
+
+    .fortune-teller__welcome-card-title {
+    }
+    
+    .fortune-teller__welcome-card-main-title {
+
+    }
+
+    .fortune-teller__welcome-card-welcome-to {
+        font-size: 30px;
+    }
+
+    .fortune-teller__welcome-card-name {
+        font-size: 50px;
+    }
+    }

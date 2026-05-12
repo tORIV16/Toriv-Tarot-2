@@ -1,5 +1,6 @@
 html {
     scrollbar-width: none;
+    margin: 0 auto;
 }
 
 .page {
@@ -16,3 +17,8 @@ button {
     font-size: 30px;
 }
 
+@media screen and (max-width: 900px) {
+    button {
+        font-size: 25px;
+    }
+}
