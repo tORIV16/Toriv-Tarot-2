@@ -27,7 +27,7 @@
     font-size: 75px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .snoopy-welcome-deco {
         display: flex;
         flex-direction: column;

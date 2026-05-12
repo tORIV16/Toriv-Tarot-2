@@ -31,7 +31,7 @@
     overflow:visible;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .fortune-teller {
         margin-top: 20px;
     }

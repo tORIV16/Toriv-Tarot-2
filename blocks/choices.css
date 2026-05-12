@@ -91,7 +91,7 @@
     border-color: rgb(184, 0, 0);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .choices {
         margin-bottom: 20px;
         width: 400px;
